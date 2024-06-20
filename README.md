@@ -1,6 +1,6 @@
 # Rank-Predictor-MHT-CET-
 The application predicts students ranks based on their percentile scores
-Certainly! The formula used in the calculateRank function predicts the rank based on the percentile entered by the user. Here's a simplified explanation:
+Certainly! The formula used in the calculateRank function predicts the rank based on the percentile entered by the user.
 
 1. Formula: 
    - If the percentile is 100, the rank is set to 1.
