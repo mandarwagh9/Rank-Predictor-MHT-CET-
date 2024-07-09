@@ -22,15 +22,17 @@ body {
 
 .container {
     display: flex;
+    flex-direction: column;
     background-color: #fff;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 100%;
 }
 
 .calculator {
     text-align: center;
-    margin-right: 20px;
+    margin-bottom: 20px;
 }
 
 h1, h2 {
@@ -68,7 +70,7 @@ p {
 }
 
 .info-box {
-    max-width: 200px;
+    max-width: 100%;
 }
 
 .info-box ul {
@@ -79,10 +81,27 @@ p {
 .info-box li {
     margin-bottom: 10px;
 }
+
 footer {
     text-align: bottom;
     padding: 10px;
     color: black;
     font-weight: 700; /* Bold text */
+}
+
+@media (min-width: 768px) {
+    .container {
+        flex-direction: row;
+        max-width: 700px;
+    }
+    
+    .calculator {
+        margin-right: 20px;
+        margin-bottom: 0;
+    }
+    
+    .info-box {
+        max-width: 200px;
+    }
 }
 
