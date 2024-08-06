@@ -1,6 +1,6 @@
 function calculateRank() {
     const percentileInput = document.getElementById('percentile').value;
-    const total = 170000;
+    const total = 300000;
     const percentile = parseFloat(percentileInput);
 
     if (isNaN(percentile) || percentile < 0 || percentile > 100) {
